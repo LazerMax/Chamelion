@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Главная страница">
+        <Button name="Добавить" locator="//button[@data-target='#editModal']" isLoaded="true" waitTimeOut="10"/>
+        <TextInput name="Название продукта" locator="//input[@id = 'name']"/>
+        <ComboBox name="Тип продукта" locator="//select[@id='type']">
+        </ComboBox>
+        <Button name="Овощ" locator="//option[@value='VEGETABLE']"/>
+        <Button name="Фрукт" locator="//option[@value='FRUIT']"/>
+        <CheckBox name="Экзотический"/>
+        <Button name="Сохранить" locator="//button[@id='save']" waitTimeOut="10"/>
+        <StaticText name="Новый продукт" locator="//td[text()='dghj%:*ГўвЂћвЂ“5ГђВїГђВ°ГђВІГђВ»ГђВї']"/>
+        <StaticText name="Новый продукт без названия" locator="//td[not(text())]" waitTimeOut="10"/>
+    </Page>
+</Pages>
